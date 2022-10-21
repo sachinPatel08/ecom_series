@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Pacifico&display=swap');
+
+.parent {
+    margin-top:4rem;
+    margin-left:3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    grid-column-gap:7rem;
+    grid-row-gap: 0px;
+    max-height:30rem;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; 
+    max-height:22%;
+}
+.div2 { grid-area: 1 / 2 / 2 / 3; 
+    max-height:22%;
+    }
+    .div1 h2{
+        margin-top:2rem;
+        font-size:3rem;
+        font-family: 'Pacifico', cursive;
+    }
+    .div1 p{
+        font-size:1rem;
+        font-family: 'Kalam', cursive;
+    }
+   
+    .fimg{
+        height:100%;
+    }
+
+    @media screen and (max-width:600px){
+        html{
+            font-size:50%;
+        }
+        .fimg{
+            display:none;
+        }
+        .parent {
+            margin-top:2rem;
+            margin-left:2rem;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            
+           
+           
+            }
+
+    }
+    @media screen and (max-width:768px){
+html{
+    font-size:70%;
+}
+    }
+    @media screen and (max-width:992px){
+html{
+    font-size:90%;
+}
+    }
+   
+    .fproduct{
+        max-height:20%;
+        max-width:100%;
+        background-color:green;
+    }
